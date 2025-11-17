@@ -24,7 +24,12 @@ ports_description:
   80/tcp: Web interface (Not required for Ingress)
 webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 map:
-  - addon_config:rw
+  - type: addon_config
+    read_only: false
+    path: /app/config
+  - type: data
+    read_only: false
+    path: /app/data
   - share:rw
   - ssl
 options:
