@@ -25,4 +25,4 @@ map:
   - ssl
 options: {}
 schema: {}
-image: stirlingtools/stirling-pdf:latest-fat
+image: ghcr.io/stirling-tools/stirling-pdf:latest-fat
