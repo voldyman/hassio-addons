@@ -26,8 +26,8 @@ map:
 options:
   env_vars: []
 environment:
-  PUID: 1000
-  PGID: 1000
+  PUID: "1000"
+  PGID: "1000"
 schema:
   env_vars:
     - name: match(^[A-Za-z0-9_]+$)

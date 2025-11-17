@@ -3,8 +3,7 @@ version: latest-fat
 slug: stirling_pdf
 url: https://github.com/Stirling-Tools/Stirling-PDF
 init: false
-ingress: true
-ingress_stream: true
+ingress: false
 panel_icon: mdi:file-pdf-box
 panel_admin: false
 homeassistant_api: false
@@ -24,11 +23,11 @@ map:
   - share:rw
   - ssl
 environment:
-  PUID: 1000
-  PGID: 1000
-  DOCKER_ENABLE_SECURITY: false
+  PUID: "1000"
+  PGID: "1000"
+  DOCKER_ENABLE_SECURITY: "false"
   LANGS: en_GB
-  DISABLE_ADDITIONAL_FEATURES: false
+  DISABLE_ADDITIONAL_FEATURES: "false"
 options: {}
 schema: {}
 image: ghcr.io/stirling-tools/stirling-pdf
