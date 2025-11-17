@@ -1,5 +1,5 @@
 name: Stirling PDF
-version: "1.0.0"
+version: latest-fat
 slug: stirling_pdf
 url: https://github.com/Stirling-Tools/Stirling-PDF
 init: false
@@ -25,4 +25,4 @@ map:
   - ssl
 options: {}
 schema: {}
-image: ghcr.io/stirling-tools/stirling-pdf:latest-fat
+image: ghcr.io/stirling-tools/stirling-pdf
