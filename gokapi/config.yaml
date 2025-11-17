@@ -14,7 +14,7 @@ arch:
 startup: application
 boot: auto
 ports:
-  53842/tcp: null
+  53842/tcp: 53842
 ports_description:
   53842/tcp: Web interface (Not required for Ingress)
 webui: "[PROTO:ssl]://[HOST]:[PORT:53842]"
