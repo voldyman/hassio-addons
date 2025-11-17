@@ -1,0 +1,36 @@
+name: GoKapi
+version: latest
+slug: stirling_pdf
+url: https://github.com/Forceu/Gokapi
+init: false
+ingress: true
+ingress_stream: true
+panel_icon: mdi:file-pdf-box
+panel_admin: false
+homeassistant_api: false
+hassio_api: false
+description: Gokapi is a simple, self-hosted file sharing server with automatic expiration and encryption support — ideal for teams or individuals who want privacy, control, and no clutter.
+arch:
+  - amd64
+startup: application
+boot: auto
+ports:
+  53842/tcp: null
+ports_description:
+  53842/tcp: Web interface (Not required for Ingress)
+webui: "[PROTO:ssl]://[HOST]:[PORT:53842]"
+map:
+  - addon_config:rw
+  - share:rw
+  - ssl
+options:
+  env_vars: []
+  PGID: "0"
+  PUID: "0"
+schema:
+  env_vars:
+    - name: match(^[A-Za-z0-9_]+$)
+      value: str?
+  PGID: int
+  PUID: int
+image: f0rc3/gokapi
