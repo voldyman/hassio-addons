@@ -19,9 +19,10 @@ arch:
   - amd64
 startup: system
 ports:
-  80/tcp: null
+  80/tcp: 8080
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 map:
   - addon_config:rw
   - share:rw

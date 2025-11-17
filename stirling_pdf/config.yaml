@@ -1,5 +1,5 @@
 name: Stirling PDF
-version: 1.0.0
+version: "1.0.0"
 slug: stirling_pdf
 url: https://github.com/Stirling-Tools/Stirling-PDF
 init: false
@@ -19,6 +19,11 @@ ports:
   8080/tcp: null
 ports_description:
   8080/tcp: Web interface (Not required for Ingress)
+webui: "[PROTO:ssl]://[HOST]:[PORT:8080]"
+map:
+  - addon_config:rw
+  - share:rw
+  - ssl
 options: {}
 schema: {}
 image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest-fat
