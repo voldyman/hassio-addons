@@ -1,7 +1,8 @@
-# Stirling PDF Home Assistant Add-on
+# Home Assistant Add-on Repository
 
 ## Description
-Stirling PDF is a locally hosted web application for various PDF operations. This add-on allows you to run Stirling PDF directly within your Home Assistant instance.
+
+A repository of addons I use on my home server.
 
 ## Installation
 
@@ -10,14 +11,6 @@ Stirling PDF is a locally hosted web application for various PDF operations. Thi
    - Click on the three-dot menu in the top right and select **Repositories**
    - Add the URL of this GitHub repository
 
-2. Install the `Stirling PDF` add-on from the list of available add-ons.
+2. Install the add-ons from the list of available add-ons.
 
 3. Configure and start the add-on.
-
-4. Access the web UI at `http://<home_assistant_ip>:8080`.
-
-## Configuration
-No additional configuration options are required.
-
-## Port
-The application runs on port `8080`.

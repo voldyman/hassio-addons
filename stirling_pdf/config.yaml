@@ -1,19 +1,24 @@
-name: "Stirling PDF"
-version: "1.0.0"
-slug: "stirling_pdf"
-description: "Locally hosted web application for various PDF operations."
+name: Stirling PDF
+version: 1.0.0
+slug: stirling_pdf
+url: https://github.com/Stirling-Tools/Stirling-PDF
+init: false
+ingress: true
+ingress_stream: true
+panel_icon: mdi:file-pdf-box
+panel_admin: false
+homeassistant_api: false
+hassio_api: false
+description: Locally hosted web application for various PDF operations.
 arch:
   - aarch64
   - amd64
-  - armhf
-  - armv7
-  - i386
 startup: application
 boot: auto
 ports:
-  8080/tcp: 8080
-webui: "http://[HOST]:[PORT:8080]"
-ingress: false
-host_network: false
+  8080/tcp: null
+ports_description:
+  8080/tcp: Web interface (Not required for Ingress)
 options: {}
 schema: {}
+image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest-fat
