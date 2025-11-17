@@ -15,7 +15,7 @@ arch:
 startup: application
 boot: auto
 ports:
-  8080/tcp: null
+  8080/tcp: 2080
 ports_description:
   8080/tcp: Web interface (Not required for Ingress)
 webui: "[PROTO:ssl]://[HOST]:[PORT:8080]"
@@ -23,6 +23,12 @@ map:
   - addon_config:rw
   - share:rw
   - ssl
+environment:
+  PUID: 1000
+  PGID: 1000
+  DOCKER_ENABLE_SECURITY: false
+  LANGS: en_GB
+  DISABLE_ADDITIONAL_FEATURES: false
 options: {}
 schema: {}
 image: ghcr.io/stirling-tools/stirling-pdf
