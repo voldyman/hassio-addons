@@ -1,10 +1,9 @@
 name: GoKapi
 version: latest
-slug: stirling_pdf
+slug: gokapi
 url: https://github.com/Forceu/Gokapi
 init: false
-ingress: true
-ingress_stream: true
+ingress: false
 panel_icon: mdi:file-pdf-box
 panel_admin: false
 homeassistant_api: false
