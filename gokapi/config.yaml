@@ -20,7 +20,12 @@ ports_description:
 webui: "[PROTO:ssl]://[HOST]:[PORT:53842]"
 map:
   - addon_config:rw
-  - share:rw
+  - type: addon_config
+    read_only: false
+    path: /app/config
+  - type: data
+    read_only: false
+    path: /app/data
   - ssl
 options:
   env_vars: []
