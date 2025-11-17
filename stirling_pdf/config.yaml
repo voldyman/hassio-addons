@@ -25,4 +25,4 @@ map:
   - ssl
 options: {}
 schema: {}
-image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest-fat
+image: stirlingtools/stirling-pdf:latest-fat
